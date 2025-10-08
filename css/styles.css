@@ -394,6 +394,8 @@ footer {
     flex-direction: column;
     width: 100%;
     gap: 6px;
+    margin: 30px;
+    padding-left: 0px;
   }
 
   .nav-links li {
@@ -405,7 +407,7 @@ footer {
     width: 100%;
     padding: 8px 12px;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
   }
 
   /* Cards should stack */
