@@ -362,3 +362,86 @@ footer {
     margin-left: 0px;
   }
 }
+
+
+/* ==== Not part of my submission, purely experimental uses AI ==== */
+
+
+/* iPhone / small mobile adjustments */
+@media (max-width: 480px) {
+
+  /* Ensure header/nav stays within viewport */
+  .site-header {
+    padding: 10px 12px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0;
+    /* remove extra margins that can cause overflow */
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  #logoCR {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  /* Cards should stack */
+  .cards {
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 10px;
+  }
+
+  /* Form improvements */
+  form {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    margin: 20px 10px;
+    width: auto;
+  }
+
+  form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  form label {
+    margin-bottom: 4px;
+    padding: 0;
+  }
+
+  form input,
+  form select,
+  form button {
+    width: 100%;
+  }
+
+  form button {
+    margin: 0;
+  }
+}
