@@ -368,7 +368,7 @@ footer {
 
 
 /* iPhone / small mobile adjustments */
-@media (max-width: 440px) {
+@media (max-width: 480px) {
 
   /* Ensure header/nav stays within viewport */
   .site-header {
@@ -392,9 +392,11 @@ footer {
 
   .nav-links {
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     gap: 6px;
     padding-left: 0px;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-links li {
