@@ -368,7 +368,7 @@ footer {
 
 
 /* iPhone / small mobile adjustments */
-@media (max-width: 320px) {
+@media (max-width: 440px) {
 
   /* Ensure header/nav stays within viewport */
   .site-header {
@@ -394,7 +394,6 @@ footer {
     flex-direction: column;
     width: 100%;
     gap: 6px;
-    margin: 30px;
     padding-left: 0px;
   }
 
