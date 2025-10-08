@@ -405,7 +405,7 @@ footer {
     width: 100%;
     padding: 8px 12px;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
   }
 
   /* Cards should stack */
