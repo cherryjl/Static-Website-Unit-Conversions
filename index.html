@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversion Reference</title>
+  <meta name="author" content="Logan Cherry">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <div id="logoCR">
+        <img id="convertLogo" src="images/Revolving-Arrows.png" alt="Two revolving arrows.">
+        <a class="logo" href="index.html" aria-label="Home">CR</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="cooking.html">Cooking</a></li>
+        <li><a href="time.html">Time</a></li>
+        <li><a href="construction.html">Construction</a></li>
+        <li><a href="tech.html">Tech & Data</a></li>
+        <li><a href="travel.html">Travel & Auto</a></li>
+        <li><a href="health.html">Health</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section class="page-header" aria-label="Main page description">
+      <div>
+        <h1>Conversion Reference</h1>
+        <p>Beginner-friendly charts for common unit conversions.</p>
+        <ul>
+          <li>Cooking &amp; Baking</li>
+          <li>Time &amp; Scheduling</li>
+          <li>Construction &amp; DIY</li>
+          <li>Tech &amp; Data</li>
+          <li>Travel &amp; Auto</li>
+          <li>Health &amp; Fitness</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside>
+      <p>Thanks for using my site!</p>
+    </aside>
+
+    <section class="cards" aria-label="Conversion categories">
+      <article class="card">
+        <h2 class="h3">Cooking &amp; Baking</h2>
+        <p>Volume, mass, and oven temps.</p>
+        <a class="more" href="cooking.html">Open</a>
+      </article>
+      <article class="card">
+        <h2 class="h3">Time &amp; Scheduling</h2>
+        <p>Hours ↔ minutes ↔ seconds, FPS ↔ ms.</p>
+        <a class="more" href="time.html">Open</a>
+      </article>
+      <article class="card">
+        <h2 class="h3">Construction &amp; DIY</h2>
+        <p>Length, area, and volume.</p>
+        <a class="more" href="construction.html">Open</a>
+      </article>
+      <article class="card">
+        <h2 class="h3">Tech &amp; Data</h2>
+        <p>KB/MB/GB vs KiB/MiB/GiB, throughput.</p>
+        <a class="more" href="tech.html">Open</a>
+      </article>
+      <article class="card">
+        <h2 class="h3">Travel &amp; Auto</h2>
+        <p>mph ↔ km/h, mpg↔L/100km, psi ↔ kPa.</p>
+        <a class="more" href="travel.html">Open</a>
+      </article>
+      <article class="card">
+        <h2 class="h3">Health &amp; Fitness</h2>
+        <p>lb ↔ kg, ft ↔ cm, kcal ↔ kJ.</p>
+        <a class="more" href="health.html">Open</a>
+      </article>
+    </section>
+
+    <section id="formSuggestion" aria-label="Suggestion Form">
+      <form action="#" method="post" class="suggesitonForm">
+        <h3>Suggest a Conversion:</h3>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="category">Category:</label>
+          <select id="category" name="category" required>
+            <option value="">Choose one</option>
+            <option>Cooking & Baking</option>
+            <option>Time & Scheduling</option>
+            <option>Construction & DIY</option>
+            <option>Tech & Data</option>
+            <option>Travel & Auto</option>
+            <option>Health & Fitness</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="unit">Unit to add:</label>
+          <input type="text" id="unit" required>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+
+    </section>
+
+  </main>
+  <footer aria-label="Footer">
+    <p>&copy; 2025 by Logan Cherry</p>
+    <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
+  </footer>
+</body>
+
+</html>
