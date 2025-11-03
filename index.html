@@ -8,7 +8,7 @@
   <meta name="author" content="Logan Cherry">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;800&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="css/home-index.css">
+  <link rel="stylesheet" href="css/home-index.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/header-nav.css">
@@ -23,15 +23,17 @@
         <img id="convertLogo" src="images/Revolving-Arrows.png" alt="Two revolving arrows.">
         <a class="logo" href="index.html" aria-label="Home">CR</a>
       </div>
-      <ul class="nav-links">
-        <li><a href="cooking.html">Cooking</a></li>
-        <li><a href="time.html">Time</a></li>
-        <li><a href="construction.html">Construction</a></li>
-        <li><a href="tech.html">Tech & Data</a></li>
-        <li><a href="travel.html">Travel & Auto</a></li>
-        <li><a href="health.html">Health</a></li>
-        <li><img src="/images/sun_icon.png"></li>
-      </ul>
+      <div id="nav">
+        <ul class="nav-links">
+          <li><a href="cooking.html">Cooking</a></li>
+          <li><a href="time.html">Time</a></li>
+          <li><a href="construction.html">Construction</a></li>
+          <li><a href="tech.html">Tech & Data</a></li>
+          <li><a href="travel.html">Travel & Auto</a></li>
+          <li><a href="health.html">Health</a></li>
+        </ul>
+        <img id="modeIcon" src="/images/sun_icon.png" alt="Sun or Moon" role="button">
+      </div>
     </nav>
   </header>
   <main>
@@ -125,6 +127,8 @@
     <p>&copy; 2025 by Logan Cherry</p>
     <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
   </footer>
+
+  <script src="js/appearanceToggle.js"></script>
 </body>
 
 </html>
