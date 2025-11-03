@@ -1,0 +1,15 @@
+/* Links & images */
+a {
+    color: var(--brand);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
