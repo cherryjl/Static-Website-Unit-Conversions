@@ -25,7 +25,7 @@
 table {
     width: auto;
     background: var(--surface);
-    border: 1px solid #1f2937;
+    border: 1px solid var(--tableBorder);
     border-radius: 6px;
     padding: 10px;
 }
@@ -48,20 +48,18 @@ caption {
     padding: 8px 10px;
     font-weight: 700;
     text-align: center;
-    background: #0b1223;
+    background: var(--captionBG);
 }
 
 thead th {
-    background: #111827;
-    color: #e5e7eb;
     text-align: center;
     padding: 8px 10px;
-    border-bottom: 1px solid #1f2937;
+    border-bottom: 1px solid var(--tableBorder);
 }
 
 tbody td {
     padding: 8px 10px;
-    border-bottom: 1px solid #1f2937;
+    border-bottom: 1px solid var(--tableBorder);
 }
 
 tbody tr:last-child td {

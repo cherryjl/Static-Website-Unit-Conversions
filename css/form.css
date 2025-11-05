@@ -1,6 +1,6 @@
 /* Form */
 form {
-    background-color: #1e293b;
+    background-color: var(--alt);
     padding: 10px;
     border-radius: 8px;
     width: fit-content;
@@ -19,32 +19,36 @@ form h3 {
 }
 
 form label {
-    color: #e2e8f0;
+    color: var(--tableColor);
     padding: 0px 20px;
+}
+
+form h3 {
+    text-align: center;
 }
 
 form input,
 form select {
     padding: 8px;
-    border: 1px solid #334155;
+    border: 1px solid var(--formBorder);
     border-radius: 5px;
-    background-color: #0f172a;
-    color: #e2e8f0;
+    background-color: var(--surface);
+    color: var(--tableColor);
 }
 
 form button {
     padding: 8px;
     margin-left: 10px;
-    background-color: #0ea5e9;
+    background-color: var(--brand);
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--text);
     cursor: pointer;
     align-items: baseline;
 }
 
 form button:hover {
-    background-color: #0284c7;
+    background-color: var(--formButtonFade);
 }
 
 option {

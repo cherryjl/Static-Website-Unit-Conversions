@@ -1,11 +1,56 @@
 :root {
+    --radius: 6px;
+
+    /* Main Colors */
+    --bg: #f9fafb;
+    --surface: #c7c7c7;
+    --text: black;
+    --muted: #334155;
+    --brand: #06b6d4;
+    --brand2: #2563eb;
+    --alt: #676b6d;
+
+    /* Table Colors */
+    --captionBG: #f3f3f3;
+    --tableBG: #ffffff;
+    --tableColor: #333333;
+    --tableBorder: #1f2937;
+
+    /* Form Colors */
+    --formBorder: #334155;
+
+    /* Hover Colors */
+    --formButtonFade: #0284c7;
+    --navHover: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    /* Main Colors */
     --bg: #0b1020;
     --surface: #0f172a;
     --muted: #94a3b8;
     --text: #e5e7eb;
-    --brand: #06b6d4;
     --brand2: #6366f1;
-    --radius: 6px;
+    --alt: #1e293b;
+
+    /* Table Colors */
+    --captionBG: #0b1223;
+    --tableBG: #111827;
+    --tableColor: #e5e7eb;
+    --tableBorder: #1f2937;
+
+    /* Form Colors */
+    --formBorder: #334155;
+
+    /* Hover Colors */
+    --formButtonFade: #0284c7;
+    --navHover: white;
+}
+
+.dark-mode body {
+    background: var(--bg);
+    color: var(--text);
 }
 
 * {
@@ -62,7 +107,7 @@ aside {
     position: fixed;
     writing-mode: sideways-lr;
     padding: 10px 0px;
-    color: white;
+    color: var(--text);
     font-weight: bold;
     z-index: 5;
     right: 0px;
@@ -83,7 +128,7 @@ aside {
 
 /* Footer */
 footer {
-    border-top: 1px solid #1f2937;
+    border-top: 1px solid var(--alt);
     padding: 8px;
     text-align: center;
     margin: 0;

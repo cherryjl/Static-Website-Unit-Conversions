@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #0f172a;
+  background: var(--surface);
   z-index: 10;
 }
 
@@ -52,8 +52,8 @@ nav {
 }
 
 .nav-links a:hover {
-  background: #1e293b;
-  color: #fff;
+  background: var(--alt);
+  color: var(--navHover);
 }
 
 #modeIcon {
@@ -66,23 +66,4 @@ nav {
 
 #modeIcon:hover {
   transform: scale(1.1);
-}
-
-#nav {
-  display: flex;
-}
-
-/* Dark Mode */
-.dark-mode {
-  --bg: #f9fafb;
-  --surface: #ffffff;
-  --text: #0f172a;
-  --muted: #334155;
-  --brand: #0284c7;
-  --brand2: #2563eb;
-}
-
-.dark-mode body {
-  background: var(--bg);
-  color: var(--text);
 }
