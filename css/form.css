@@ -19,7 +19,7 @@ form h3 {
 }
 
 form label {
-    color: var(--tableColor);
+    color: var(--text);
     padding: 0px 20px;
 }
 
@@ -33,7 +33,7 @@ form select {
     border: 1px solid var(--formBorder);
     border-radius: 5px;
     background-color: var(--surface);
-    color: var(--tableColor);
+    color: var(--text);
 }
 
 form button {
