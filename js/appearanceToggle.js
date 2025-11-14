@@ -1,11 +1,5 @@
-if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark-mode');
-    document.getElementById('modeIcon').src = 'images/moon_png';
-}
-
 const toggleBtn = document.getElementById('modeIcon');
 const html = document.documentElement;
-
 const savedTheme = localStorage.getItem('theme');
 
 if (savedTheme === 'dark') {
