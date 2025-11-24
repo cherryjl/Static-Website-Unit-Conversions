@@ -1,5 +1,6 @@
 // Dynamic converter for the construction page
 
+// Unites based on a standard meter.
 let units = {
     inch: 0.0254,
     foot: 0.3048,
@@ -8,6 +9,7 @@ let units = {
     centimeter: 0.01
 };
 
+// Rounds a number to two decimal places, removing trailing zeros.
 function roundTwo(n) {
     if (isNaN(n)) {
         return 'NaN';
@@ -28,13 +30,18 @@ function roundTwo(n) {
     return s;
 };
 
+
+// Selectors and variables.
 let unitFrom = document.getElementById('unitFrom');
 let unitTo = document.getElementById('unitTo');
 let valueInput = document.getElementById('valueIn');
 let result = document.getElementById('result');
 
-function computeAndShow() {
-    // read and validate inputs (use only if/else, no shortcuts)
+
+// Function to solve and display conversion.
+function conversionSolver() {
+
+    // Starting local variables.
     let fromUnit = 'meter';
     let toUnit = 'meter';
     let valueInNum = 0;
@@ -65,6 +72,7 @@ function computeAndShow() {
     let metersFrom = units[fromUnit];
     let metersTo = units[toUnit];
 
+    // Check if units are valid.
     if (metersFrom === undefined || metersTo === undefined) {
         result.textContent = 'Result: unit not found';
         return;
@@ -74,11 +82,13 @@ function computeAndShow() {
     let valueInMeters = valueInNum * metersFrom;
     let converted = valueInMeters / metersTo;
 
+    // Rounds the value, unhide result, and displays it.
     let rounded = roundTwo(converted);
     result.style.display = 'block';
     result.textContent = rounded + ' ' + toUnit;
 }
 
-if (unitFrom) { unitFrom.addEventListener('change', computeAndShow); };
-if (unitTo) { unitTo.addEventListener('change', computeAndShow); };
-if (valueInput) { valueInput.addEventListener('input', computeAndShow); };
+// Event listeners that trigger conversion on change/input.
+unitFrom.addEventListener('change', conversionSolver);
+unitTo.addEventListener('change', conversionSolver);
+valueInput.addEventListener('input', conversionSolver);

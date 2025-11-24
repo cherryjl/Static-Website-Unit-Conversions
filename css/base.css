@@ -1,3 +1,5 @@
+/* Main styling file */
+/* My variables */
 :root {
     --radius: 6px;
 
@@ -48,11 +50,13 @@
     --navHover: white;
 }
 
+/* Changes body colors to dark mode or light mode */
 .dark-mode body {
     background: var(--bg);
     color: var(--text);
 }
 
+/* Global Styles */
 * {
     box-sizing: border-box;
 }

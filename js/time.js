@@ -1,5 +1,6 @@
 // Dynamic converter for the construction page
 
+// Unites based on a standard day.
 let units = {
     second: 86400,
     minute: 1440,
@@ -10,6 +11,7 @@ let units = {
     year: 0.0027397232876831892345
 };
 
+// Rounds a number to two decimal places, removing trailing zeros.
 function roundTwo(n) {
     if (isNaN(n)) {
         return 'NaN';
@@ -30,13 +32,15 @@ function roundTwo(n) {
     return s;
 };
 
+// Selectors and variables.
 let unitFrom = document.getElementById('unitFrom');
 let unitTo = document.getElementById('unitTo');
 let valueInput = document.getElementById('valueIn');
 let result = document.getElementById('result');
 
-function computeAndShow() {
-    // read and validate inputs (use only if/else, no shortcuts)
+// Function to solve and display conversion.
+function conversionSolver() {
+    // Starting local variables.
     let fromUnit = 'day';
     let toUnit = 'day';
     let valueIn = 0;
@@ -67,6 +71,7 @@ function computeAndShow() {
     let daysFrom = units[fromUnit];
     let daysTo = units[toUnit];
 
+    // Check if units are valid.
     if (daysFrom === undefined || daysTo === undefined) {
         result.textContent = 'Result: unit not found';
         return;
@@ -74,11 +79,13 @@ function computeAndShow() {
 
     let converted = valueIn * (daysTo / daysFrom);
 
+    // Rounds the value, unhide result, and displays it.
     let rounded = roundTwo(converted);
     result.style.display = 'block';
     result.textContent = rounded + ' ' + toUnit;
 };
 
-if (unitFrom) { unitFrom.addEventListener('change', computeAndShow); };
-if (unitTo) { unitTo.addEventListener('change', computeAndShow); };
-if (valueInput) { valueInput.addEventListener('input', computeAndShow); };
+// Event listeners that trigger conversion on change/input.
+unitFrom.addEventListener('change', conversionSolver);
+unitTo.addEventListener('change', conversionSolver);
+valueInput.addEventListener('input', conversionSolver);

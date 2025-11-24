@@ -1,5 +1,6 @@
-/* Construction page */
+/* Styles for the custom converter section on each page */
 
+/* Container div */
 #container {
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@
     margin-bottom: 20px;
 }
 
-#constructionConverter {
+#converter {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -18,6 +19,7 @@
     border-radius: 10px;
 }
 
+/* Input is from and output is to. */
 .input,
 .output {
     display: flex;
@@ -39,6 +41,7 @@
     color: var(--text);
 }
 
+/* Styles for the output div box. */
 #result {
     width: 150px;
     line-height: 20px;
@@ -50,12 +53,14 @@
     border-radius: 2px;
 }
 
+/* Styles for the equals sign. */
 .equals {
     align-self: center;
     font-size: 24px;
     font-weight: bold;
 }
 
+/* Centers some of the form text elements */
 select,
 input,
 label {

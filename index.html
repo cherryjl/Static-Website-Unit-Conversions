@@ -20,6 +20,7 @@
   <header class="site-header">
     <nav aria-label="Primary">
       <div id="logoCR">
+        <!-- The site logo and abbreviation of site title -->
         <img id="convertLogo" src="images/Revolving-Arrows.png" alt="Two revolving arrows.">
         <a class="logo" href="index.html" aria-label="Home">CR</a>
       </div>
@@ -31,6 +32,7 @@
         <li><a href="travel.html">Travel & Auto</a></li>
         <li><a href="health.html">Health</a></li>
       </ul>
+      <!-- Symbol for light and dark modes -->
       <img id="modeIcon" src="/images/sun_icon.png" alt="Sun or Moon" role="button">
     </nav>
   </header>
@@ -40,6 +42,7 @@
       <div>
         <h1>Conversion Reference</h1>
         <p>Beginner-friendly charts for common unit conversions.</p>
+        <!-- What is included on this website. -->
         <ul>
           <li>Cooking &amp; Baking</li>
           <li>Time &amp; Scheduling</li>
@@ -55,6 +58,7 @@
       <p>Thanks for using my site!</p>
     </aside>
 
+    <!-- A brief summary of all covered conversions with a jump link for each. -->
     <section class="cards" aria-label="Conversion categories">
       <article class="card">
         <h2 class="h3">Cooking &amp; Baking</h2>
@@ -88,8 +92,9 @@
       </article>
     </section>
 
+    <!-- Suggestion form for user to suggest new ideas/conversions. -->
     <section id="formSuggestion" aria-label="Suggestion Form">
-      <form action="#" method="post" class="suggesitonForm">
+      <form action="#" method="post" class="suggestionForm">
         <h3>Suggest a conversion:</h3>
         <div>
           <label for="name">Name:</label>
@@ -111,8 +116,12 @@
         </div>
 
         <div>
-          <label for="unit">Unit to add and comments:</label>
+          <label for="unit">Unit to add:</label>
           <input type="text" id="unit" required>
+        </div>
+        <div>
+          <label for="comments">Comments:</label>
+          <input type="text" id="comments" required>
         </div>
         <button id="emailBtn" type="button">Submit</button>
       </form>
@@ -120,6 +129,7 @@
 
   </main>
   <footer aria-label="Footer">
+    <!-- My name and LinkedIn profile. -->
     <p>&copy; 2025 by Logan Cherry</p>
     <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
   </footer>

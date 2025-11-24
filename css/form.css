@@ -14,17 +14,16 @@ form {
     margin-top: 40px;
 }
 
+/* Removes header margin. */
 form h3 {
     margin: 0px;
+    text-align: center;
 }
 
+/* Sets color of text appropriately. */
 form label {
     color: var(--text);
     padding: 0px 20px;
-}
-
-form h3 {
-    text-align: center;
 }
 
 form input,
@@ -36,9 +35,9 @@ form select {
     color: var(--text);
 }
 
+/* Styles for the submit button. */
 form button {
     padding: 8px;
-    margin-left: 10px;
     background-color: var(--brand);
     border: none;
     border-radius: 5px;
@@ -47,10 +46,45 @@ form button {
     align-items: baseline;
 }
 
+/* Sets hover color. */
 form button:hover {
     background-color: var(--formButtonFade);
 }
 
 option {
     text-align: center;
+}
+
+/* Styles for the suggestion form. */
+form.suggestionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 520px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+form.suggestionForm > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+}
+
+form.suggestionForm label {
+    padding: 0 0 6px 0;
+}
+
+form.suggestionForm input,
+form.suggestionForm select,
+form.suggestionForm button {
+    width: 100%;
+    box-sizing: border-box;
 }

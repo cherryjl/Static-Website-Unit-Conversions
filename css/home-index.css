@@ -1,4 +1,6 @@
 /* Home */
+
+/* Styles for the cards section on the home page (index.html). */
 .cards {
     max-width: 1200px;
     margin: 0 auto;
@@ -14,9 +16,4 @@
     border-radius: var(--radius);
     flex-grow: 1;
     flex-shrink: 1;
-}
-
-.more {
-    display: inline-block;
-    margin-top: 6px;
 }
