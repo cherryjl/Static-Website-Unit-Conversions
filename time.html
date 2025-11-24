@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/header-nav.css">
   <link rel="stylesheet" href="css/links-images.css">
   <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/custom-converter.css">
 </head>
 
 <body>
@@ -156,6 +157,43 @@
 
     </div>
 
+    <div id="container">
+      <div id="lowBox">
+        <h3>Custom</h3>
+        <section id="constructionConverter" aria-label="Simple converter">
+          <div class="input">
+            <label for="unitFrom">From:</label>
+            <select id="unitFrom">
+              <option value="day" selected>Day</option>
+              <option value="second">Second</option>
+              <option value="minute">Minute</option>
+              <option value="hour">Hour</option>
+              <option value="week">Week</option>
+              <option value="month">Month</option>
+              <option value="year">Year</option>
+            </select>
+
+            <input id="valueIn" type="number" step="any" placeholder="Enter Value:">
+          </div>
+          <div class="equals">=</div>
+          <div class="output">
+            <label for="unitTo">To:</label>
+            <select id="unitTo">
+              <option value="day">Day</option>
+              <option value="second">Second</option>
+              <option value="minute" selected>Minute</option>
+              <option value="hour">Hour</option>
+              <option value="week">Week</option>
+              <option value="month">Month</option>
+              <option value="year">Year</option>
+            </select>
+
+            <div id="result">Output:</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
   </main>
   <footer aria-label="Footer">
     <p>&copy; 2025 by Logan Cherry</p>
@@ -163,6 +201,7 @@
   </footer>
 
   <script src="js/appearanceToggle.js"></script>
+  <script src="js/time.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/header-nav.css">
   <link rel="stylesheet" href="css/links-images.css">
   <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/custom-converter.css">
 </head>
 
 <body>
@@ -140,6 +141,10 @@
             </tr>
           </thead>
           <tbody>
+             <tr>
+              <td>165 °F</td>
+              <td>73.89 °C</td>
+            </tr>
             <tr>
               <td>250 °F</td>
               <td>121.11 °C</td>
@@ -182,12 +187,50 @@
 
     </div>
 
+    <div id="container">
+      <div id="lowBox">
+        <h3>Custom</h3>
+        <section id="constructionConverter" aria-label="Simple converter">
+          <div class="input">
+            <label for="unitFrom">From:</label>
+            <select id="unitFrom">
+              <option value="cup">Cup</option>
+              <option value="tablespoon" selected>Tablespoons</option>
+              <option value="teaspoon">Teaspoons</option>
+              <option value="quart">Quart</option>
+              <option value="pint">Pint</option>
+              <option value="gallon">Gallon</option>
+              <option value="ounces">Ounces</option>
+            </select>
+
+            <input id="valueIn" type="number" step="any" placeholder="Enter Value:">
+          </div>
+          <div class="equals">=</div>
+          <div class="output">
+            <label for="unitTo">To:</label>
+            <select id="unitTo">
+              <option value="cup" selected>Cup</option>
+              <option value="tablespoon">Tablespoons</option>
+              <option value="teaspoon">Teaspoons</option>
+              <option value="quart">Quart</option>
+              <option value="pint">Pint</option>
+              <option value="gallon">Gallon</option>
+              <option value="ounces">Ounces</option>
+            </select>
+
+            <div id="result">Output:</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
   </main>
   <footer aria-label="Footer">
     <p>&copy; 2025 by Logan Cherry</p>
     <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
   </footer>
   <script src="js/appearanceToggle.js"></script>
+  <script src="js/cooking.js"></script>
 </body>
 
 </html>

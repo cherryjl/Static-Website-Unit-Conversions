@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/header-nav.css">
   <link rel="stylesheet" href="css/links-images.css">
   <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/custom-converter.css">
 </head>
 
 <body>
@@ -69,6 +70,36 @@
               <td>3 ft</td>
             </tr>
             <tr>
+              <td>1 meter</td>
+              <td>100 cm</td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
+
+      <figure class="table-figure" aria-label="Other">
+        <table>
+          <caption>Area</caption>
+          <thead>
+            <tr>
+              <th>From</th>
+              <th>To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 mile</td>
+              <td>0.62 km</td>
+            </tr>
+            <tr>
+              <td>1 acre</td>
+              <td>43,560 sq ft</td>
+            </tr>
+            <tr>
+              <td>1 yard</td>
+              <td>3 ft</td>
+            </tr>
+            <tr>
               <td>3 ft</td>
               <td>36 inches</td>
             </tr>
@@ -101,12 +132,47 @@
 
     </div>
 
+    <div id="container">
+      <div id="lowBox">
+        <h3>Custom</h3>
+        <section id="constructionConverter" aria-label="Simple converter">
+          <div class="input">
+            <label for="unitFrom">From:</label>
+            <select id="unitFrom">
+              <option value="inch" selected>Inch</option>
+              <option value="foot">Foot</option>
+              <option value="yard">Yard</option>
+              <option value="meter">Meter</option>
+              <option value="centimeter">Centimeter</option>
+            </select>
+
+            <input id="valueIn" type="number" step="any" placeholder="Enter Value:">
+          </div>
+          <div class="equals">=</div>
+          <div class="output">
+            <label for="unitTo">To:</label>
+            <select id="unitTo">
+              <option value="meter">Meter</option>
+              <option value="centimeter">Centimeter</option>
+              <option value="foot" selected>Foot</option>
+              <option value="inch">Inch</option>
+              <option value="yard">Yard</option>
+            </select>
+
+            <div id="result">Output:</div>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
+
   <footer aria-label="Footer">
     <p>&copy; 2025 by Logan Cherry</p>
     <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
   </footer>
+
   <script src="js/appearanceToggle.js"></script>
+  <script src="js/construction.js"></script>
 </body>
 
 </html>
