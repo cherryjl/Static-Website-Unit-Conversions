@@ -9,12 +9,12 @@
     "orientation": "portrait",
     "icons": [
         {
-            "src": "images/Revolving-Arrows.png",
+            "src": "/images/Revolving-Arrows.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "images/Revolving-Arrows.png",
+            "src": "/images/Revolving-Arrows.png",
             "sizes": "512x512",
             "type": "image/png"
         }
