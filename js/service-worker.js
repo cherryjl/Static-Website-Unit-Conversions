@@ -26,6 +26,7 @@ const ASSETS = [
     "/js/travel.js",
     "/images/moon_icon.png",
     "/images/Revolving-Arrows.png",
+    "/images/myLogov2.png",
     "/images/sun_icon.png"
 ];
 
