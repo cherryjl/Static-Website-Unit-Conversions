@@ -53,6 +53,24 @@ This project was created for IT 301 and was born from a simple need: getting tir
 
 ## Screenshots
 
+<p align="center"><em>Homepage</em></em></p>
+<p align="center">
+  <img width="2540" height="1128" alt="Screenshot 2026-01-15 131025" src="https://github.com/user-attachments/assets/69b52620-c16d-4a8c-83ec-4e131d5db487" />
+</p>
+
+<p align="center"><em>Conversion page</em></p>
+<p align="center">
+  <img width="2379" height="1044" alt="Screenshot 2026-01-15 131055" src="https://github.com/user-attachments/assets/1f42f15c-11aa-474b-a7d1-2e645a865df3" />
+</p>
+
+<p align="center"><em>Light Mode</em></p>
+<p align="center">
+  <img width="2362" height="989" alt="Screenshot 2026-01-15 131116" src="https://github.com/user-attachments/assets/99651c9f-45f0-45bf-bbe5-ac0de99ee3d3" />
+</p>
+
+
+
+
 ## Author
 
 Logan Cherry
