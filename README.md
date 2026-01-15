@@ -68,9 +68,6 @@ This project was created for IT 301 and was born from a simple need: getting tir
   <img width="2362" height="989" alt="Screenshot 2026-01-15 131116" src="https://github.com/user-attachments/assets/99651c9f-45f0-45bf-bbe5-ac0de99ee3d3" />
 </p>
 
-
-
-
 ## Author
 
 Logan Cherry
