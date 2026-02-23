@@ -143,6 +143,11 @@ footer {
     margin-bottom: 10px;
 }
 
+footer a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* Media Media Media */
 @media (max-width: 900px) {
     .table-figure {

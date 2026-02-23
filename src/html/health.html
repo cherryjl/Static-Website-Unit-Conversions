@@ -5,24 +5,24 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Conversion Reference - Time & Scheduling</title>
+  <title>Conversion Reference - Health & Fitness</title>
   <meta name="author" content="Logan Cherry">
 
   <!-- Google Fonts and CSS Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/header-nav.css">
-  <link rel="stylesheet" href="css/links-images.css">
-  <link rel="stylesheet" href="css/tables.css">
-  <link rel="stylesheet" href="css/custom-converter.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header-nav.css">
+  <link rel="stylesheet" href="../css/links-images.css">
+  <link rel="stylesheet" href="../css/tables.css">
+  <link rel="stylesheet" href="../css/custom-converter.css">
 
   <!-- PWA Manifest and Apple Touch Icon -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="../manifest.json">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Unit Converter App">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="apple-touch-icon" sizes="192x192" href="/images/myLogov2.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="../images/myLogov2.png">
 </head>
 
 <body>
@@ -30,9 +30,9 @@
 
     <nav aria-label="Primary">
       <div id="logoCR">
-         <!-- The site logo and abbreviation of site title -->
-        <img id="convertLogo" src="images/Revolving-Arrows-x512.png" alt="Two revolving arrows.">
-        <a class="logo" href="index.html" aria-label="Home">CR</a>
+        <!-- The site logo and abbreviation of site title -->
+        <img id="convertLogo" src="../images/Revolving-Arrows-x512.png" alt="Two revolving arrows.">
+        <a class="logo" href="../index.html" aria-label="Home">UC</a>
       </div>
       <ul class="nav-links">
         <li><a href="cooking.html">Cooking</a></li>
@@ -43,14 +43,14 @@
         <li><a href="health.html">Health</a></li>
       </ul>
       <!-- Symbol for light and dark modes -->
-      <img id="modeIcon" src="/images/sun_icon.png" alt="Sun or Moon" role="button">
+      <img id="modeIcon" src="../images/sun_icon.png" alt="Sun or Moon" role="button">
     </nav>
   </header>
   <main id="main">
 
     <section class="page-header">
-      <h1>Time &amp; Scheduling</h1>
-      <p>For time conversions. For months assume 30 days.</p>
+      <h1>Health &amp; Fitness</h1>
+      <p>Common, rounded values.</p>
     </section>
 
     <aside>
@@ -59,9 +59,9 @@
 
     <!-- Basic or common measurements. -->
     <div class="tables-grid">
-      <figure class="table-figure" aria-label="Basics">
+      <figure class="table-figure" aria-label="Weight">
         <table>
-          <caption>Basics</caption>
+          <caption>Weight</caption>
           <thead>
             <tr>
               <th>From</th>
@@ -70,24 +70,32 @@
           </thead>
           <tbody>
             <tr>
-              <td>1 hour</td>
-              <td>60 minutes</td>
+              <td>1 lb</td>
+              <td>0.45 kg</td>
             </tr>
             <tr>
-              <td>1 day</td>
-              <td>24 hours</td>
+              <td>10 lb</td>
+              <td>4.54 kg</td>
             </tr>
             <tr>
-              <td>1 week</td>
-              <td>7 days</td>
+              <td>50 lb</td>
+              <td>22.68 kg</td>
+            </tr>
+            <tr>
+              <td>100 lb</td>
+              <td>45.36 kg</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>2.20 lb</td>
             </tr>
           </tbody>
         </table>
       </figure>
 
-      <figure class="table-figure" aria-label="Days to Months">
+      <figure class="table-figure" aria-label="Height">
         <table>
-          <caption>Days → Months (≈)</caption>
+          <caption>Height</caption>
           <thead>
             <tr>
               <th>From</th>
@@ -96,24 +104,28 @@
           </thead>
           <tbody>
             <tr>
-              <td>30 days</td>
-              <td>1 month</td>
+              <td>1 in</td>
+              <td>2.54 cm</td>
             </tr>
             <tr>
-              <td>60 days</td>
-              <td>2 months</td>
+              <td>12 in (1 ft)</td>
+              <td>30.48 cm</td>
             </tr>
             <tr>
-              <td>90 days</td>
-              <td>3 months</td>
+              <td>5 ft 6 in</td>
+              <td>167.64 cm</td>
+            </tr>
+            <tr>
+              <td>6 ft 0 in</td>
+              <td>182.88 cm</td>
             </tr>
           </tbody>
         </table>
       </figure>
 
-      <figure class="table-figure" aria-label="Hours">
+      <figure class="table-figure" aria-label="Energy">
         <table>
-          <caption>Hours (common spans)</caption>
+          <caption>Energy</caption>
           <thead>
             <tr>
               <th>From</th>
@@ -122,46 +134,42 @@
           </thead>
           <tbody>
             <tr>
-              <td>24 hours</td>
-              <td>1 day</td>
+              <td>1 kcal</td>
+              <td>4.18 kJ</td>
             </tr>
             <tr>
-              <td>168 hours</td>
-              <td>1 week</td>
-            </tr>
-            <tr>
-              <td>730.00 hours</td>
-              <td>≈ 1 month</td>
-            </tr>
-            <tr>
-              <td>8,760.00 hours</td>
-              <td>≈ 1 year (365 days)</td>
+              <td>100 kcal</td>
+              <td>418.40 kJ</td>
             </tr>
           </tbody>
         </table>
       </figure>
 
-      <figure class="table-figure" aria-label="Frame Time">
+      <figure class="table-figure" aria-label="Weight">
         <table>
-          <caption>Frame Time</caption>
+          <caption>BMI Chart</caption>
           <thead>
             <tr>
-              <th>FPS</th>
-              <th>ms per frame</th>
+              <th>From</th>
+              <th>To</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>30 FPS</td>
-              <td>33.33 ms</td>
+              <td>Under 18.5</td>
+              <td>Underweight</td>
             </tr>
             <tr>
-              <td>60 FPS</td>
-              <td>16.67 ms</td>
+              <td>18.5 - 24.9</td>
+              <td>Normal weight</td>
             </tr>
             <tr>
-              <td>120 FPS</td>
-              <td>8.33 ms</td>
+              <td>25 - 29.9</td>
+              <td>Overweight</td>
+            </tr>
+            <tr>
+              <td>Above 30</td>
+              <td>Obese</td>
             </tr>
           </tbody>
         </table>
@@ -177,13 +185,10 @@
           <div class="input">
             <label for="unitFrom">From:</label>
             <select id="unitFrom">
-              <option value="day" selected>Day</option>
-              <option value="second">Second</option>
-              <option value="minute">Minute</option>
-              <option value="hour">Hour</option>
-              <option value="week">Week</option>
-              <option value="month">Month</option>
-              <option value="year">Year</option>
+              <option value="pound" selected>Pound</option>
+              <option value="kilogram">Kilogram</option>
+              <option value="ounce">Ounce</option>
+              <option value="gram">Gram</option>
             </select>
 
             <input id="valueIn" type="number" step="any" placeholder="Enter Value:">
@@ -192,13 +197,10 @@
           <div class="output">
             <label for="unitTo">To:</label>
             <select id="unitTo">
-              <option value="day">Day</option>
-              <option value="second">Second</option>
-              <option value="minute" selected>Minute</option>
-              <option value="hour">Hour</option>
-              <option value="week">Week</option>
-              <option value="month">Month</option>
-              <option value="year">Year</option>
+              <option value="pound">Pound</option>
+              <option value="kilogram" selected>Kilogram</option>
+              <option value="ounce">Ounce</option>
+              <option value="gram">Gram</option>
             </select>
 
             <div id="result">Output:</div>
@@ -208,16 +210,18 @@
     </div>
 
   </main>
+
   <footer aria-label="Footer">
-    <!-- My name and LinkedIn profile. -->
+    <!-- My name, LinkedIn profile, and GitHub profile. -->
     <p>&copy; 2025 by Logan Cherry</p>
     <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
+    <a href="https://github.com/cherryjl">GitHub</a>
   </footer>
 
-  <script src="js/appearanceToggle.js"></script>
-  <script src="js/converterUtility.js"></script>
-  <script src="js/time.js"></script>
-  <script src="js/register-SW.js"></script>
+  <script src="../js/appearanceToggle.js"></script>
+  <script src="../js/converterUtility.js"></script>
+  <script src="../js/health.js"></script>
+  <script src="../js/register-SW.js"></script>
 </body>
 
 </html>
