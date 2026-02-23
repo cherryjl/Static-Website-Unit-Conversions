@@ -1,0 +1,203 @@
+/* Main styling file */
+/* My variables */
+:root {
+    --radius: 6px;
+
+    /* Main Colors */
+    --bg: #f9fafb;
+    --surface: #c7c7c7;
+    --text: black;
+    --muted: #334155;
+    --brand: #06b6d4;
+    --brand2: #2563eb;
+    --alt: #676b6d;
+
+    /* Table Colors */
+    --captionBG: #f3f3f3;
+    --tableBG: #ffffff;
+    --tableColor: #333333;
+    --tableBorder: #1f2937;
+
+    /* Form Colors */
+    --formBorder: #334155;
+
+    /* Hover Colors */
+    --formButtonFade: #0284c7;
+    --navHover: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    /* Main Colors */
+    --bg: #0b1020;
+    --surface: #0f172a;
+    --muted: #94a3b8;
+    --text: #e5e7eb;
+    --brand2: #6366f1;
+    --alt: #1e293b;
+
+    /* Table Colors */
+    --captionBG: #0b1223;
+    --tableBG: #111827;
+    --tableColor: #e5e7eb;
+    --tableBorder: #1f2937;
+
+    /* Form Colors */
+    --formBorder: #334155;
+
+    /* Hover Colors */
+    --formButtonFade: #0284c7;
+    --navHover: white;
+}
+
+/* Changes body colors to dark mode or light mode */
+.dark-mode body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    line-height: 1.6;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: auto;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 16px 16px 20px 16px;
+    margin: 0px 25px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    font-family: Poppins, system-ui, sans-serif;
+    margin: 0 0 8px 0;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 38px;
+    margin-top: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/* Aside */
+aside {
+    transform: translateY(-50%);
+    font-size: 14px;
+    top: 50%;
+    position: fixed;
+    writing-mode: sideways-lr;
+    padding: 10px 0px;
+    color: var(--text);
+    font-weight: bold;
+    z-index: 5;
+    right: 0px;
+    background-color: var(--brand);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Section header */
+.page-header {
+    max-width: 1500px;
+    margin: 0 35px 24px;
+}
+
+.page-header p {
+    color: var(--muted);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--alt);
+    padding: 8px;
+    text-align: center;
+    margin: 0;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+footer a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Media Media Media */
+@media (max-width: 900px) {
+    .table-figure {
+        flex-basis: 300px;
+    }
+
+    .cards {
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    form button {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 560px) {
+    .table-figure {
+        flex-basis: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    form button {
+        margin-left: 0px;
+    }
+}
