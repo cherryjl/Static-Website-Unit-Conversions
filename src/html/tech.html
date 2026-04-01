@@ -1,248 +1,271 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conversion Reference - Tech & Data</title>
+    <meta name="author" content="Logan Cherry" />
 
-<head>
+    <!-- Google Fonts and CSS Stylesheets -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/header-nav.css" />
+    <link rel="stylesheet" href="../css/links-images.css" />
+    <link rel="stylesheet" href="../css/tables.css" />
+    <link rel="stylesheet" href="../css/custom-converter.css" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Conversion Reference - Tech & Data</title>
-  <meta name="author" content="Logan Cherry">
+    <!-- PWA Manifest and Apple Touch Icon -->
+    <link rel="manifest" href="../manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Unit Converter App" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../images/myLogov2.png"
+    />
+  </head>
 
-  <!-- Google Fonts and CSS Stylesheets -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/header-nav.css">
-  <link rel="stylesheet" href="../css/links-images.css">
-  <link rel="stylesheet" href="../css/tables.css">
-  <link rel="stylesheet" href="../css/custom-converter.css">
+  <body>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <div id="logoCR">
+          <!-- The site logo and abbreviation of site title -->
+          <img
+            id="convertLogo"
+            src="../images/Revolving-Arrows-x512.png"
+            alt="Two revolving arrows."
+          />
+          <a class="logo" href="../index.html" aria-label="Home">UC</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="cooking.html">Cooking</a></li>
+          <li><a href="time.html">Time</a></li>
+          <li><a href="construction.html">Construction</a></li>
+          <li><a href="tech.html">Tech & Data</a></li>
+          <li><a href="travel.html">Travel & Auto</a></li>
+          <li><a href="health.html">Health</a></li>
+        </ul>
+        <!-- Symbol for light and dark modes -->
+        <img
+          id="modeIcon"
+          src="../images/sun_icon.png"
+          alt="Sun or Moon"
+          role="button"
+        />
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-header">
+        <h1>Tech &amp; Data</h1>
+        <p>
+          Storage (decimal vs binary), Linux permissions, and electrical power.
+        </p>
+      </section>
 
-  <!-- PWA Manifest and Apple Touch Icon -->
-  <link rel="manifest" href="../manifest.json">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Unit Converter App">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="apple-touch-icon" sizes="192x192" href="../images/myLogov2.png">
-</head>
+      <aside>
+        <p>Thanks for using my site!</p>
+      </aside>
 
-<body>
-  <header class="site-header">
+      <!-- Basic or common measurements. -->
+      <div class="tables-grid">
+        <figure class="table-figure" aria-label="Storage (decimal, base 10)">
+          <table>
+            <caption>
+              Storage (Decimal, base 10)
+            </caption>
+            <thead>
+              <tr>
+                <th>Unit</th>
+                <th>Equals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 KB</td>
+                <td>1,000 bytes</td>
+              </tr>
+              <tr>
+                <td>1 MB</td>
+                <td>1,000,000 bytes</td>
+              </tr>
+              <tr>
+                <td>1 GB</td>
+                <td>1,000,000,000 bytes</td>
+              </tr>
+              <tr>
+                <td>1 Byte</td>
+                <td>8 bits</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
 
-    <nav aria-label="Primary">
-      <div id="logoCR">
-         <!-- The site logo and abbreviation of site title -->
-        <img id="convertLogo" src="../images/Revolving-Arrows-x512.png" alt="Two revolving arrows.">
-        <a class="logo" href="../index.html" aria-label="Home">UC</a>
+        <figure class="table-figure" aria-label="Storage (binary, base 2)">
+          <table>
+            <caption>
+              Storage (Binary, base 2)
+            </caption>
+            <thead>
+              <tr>
+                <th>Unit</th>
+                <th>Equals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 KiB</td>
+                <td>1,024 bytes</td>
+              </tr>
+              <tr>
+                <td>1 MiB</td>
+                <td>1,048,576 bytes</td>
+              </tr>
+              <tr>
+                <td>1 GiB</td>
+                <td>1,073,741,824 bytes</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <figure class="table-figure" aria-label="Linux file modes (chmod)">
+          <table>
+            <caption>
+              Linux file modes (chmod)
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Mode</th>
+                <th scope="col">Permissions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>600</td>
+                <td>rw-------</td>
+              </tr>
+              <tr>
+                <td>644</td>
+                <td>rw-r--r--</td>
+              </tr>
+              <tr>
+                <td>666</td>
+                <td>rw-rw-rw-</td>
+              </tr>
+              <tr>
+                <td>700</td>
+                <td>rwx------</td>
+              </tr>
+              <tr>
+                <td>755</td>
+                <td>rwxr-xr-x</td>
+              </tr>
+              <tr>
+                <td>775</td>
+                <td>rwxrwxr-x</td>
+              </tr>
+              <tr>
+                <td>777</td>
+                <td>rwxrwxrwx</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <figure class="table-figure" aria-label="Electrical">
+          <table>
+            <caption>
+              Electrical: W = V × A
+            </caption>
+            <thead>
+              <tr>
+                <th>From</th>
+                <th>To</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5 V × 2 A</td>
+                <td>10 W</td>
+              </tr>
+              <tr>
+                <td>12 V × 1.5 A</td>
+                <td>18 W</td>
+              </tr>
+              <tr>
+                <td>120 V × 10 A</td>
+                <td>1200 W</td>
+              </tr>
+              <tr>
+                <td>230 V × 10 A</td>
+                <td>2300 W</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
       </div>
-      <ul class="nav-links">
-        <li><a href="cooking.html">Cooking</a></li>
-        <li><a href="time.html">Time</a></li>
-        <li><a href="construction.html">Construction</a></li>
-        <li><a href="tech.html">Tech & Data</a></li>
-        <li><a href="travel.html">Travel & Auto</a></li>
-        <li><a href="health.html">Health</a></li>
-      </ul>
-      <!-- Symbol for light and dark modes -->
-      <img id="modeIcon" src="../images/sun_icon.png" alt="Sun or Moon" role="button">
-    </nav>
-  </header>
-  <main id="main">
 
-    <section class="page-header">
-      <h1>Tech &amp; Data</h1>
-      <p>Storage (decimal vs binary), Linux permissions, and electrical power.</p>
-    </section>
+      <!-- Custom converter section -->
+      <div id="container">
+        <div id="lowBox">
+          <h3>Custom</h3>
+          <section id="converter" aria-label="Simple converter">
+            <div class="input">
+              <label for="unitFrom">From:</label>
+              <select id="unitFrom">
+                <option value="byte">Byte</option>
+                <option value="bit">Bit</option>
+                <option value="kilobyte">Kilobyte</option>
+                <option value="megabyte" selected>Megabyte</option>
+                <option value="gigabyte">Gigabyte</option>
+                <option value="terabyte">Terabyte</option>
+                <option value="kilobit">Kilobit</option>
+                <option value="megabit">Megabit</option>
+                <option value="gigabit">Gigabit</option>
+              </select>
 
-    <aside>
-      <p>Thanks for using my site!</p>
-    </aside>
+              <input
+                id="valueIn"
+                type="number"
+                step="any"
+                placeholder="Enter Value:"
+              />
+            </div>
+            <div class="equals">=</div>
+            <div class="output">
+              <label for="unitTo">To:</label>
+              <select id="unitTo">
+                <option value="byte">Byte</option>
+                <option value="bit">Bit</option>
+                <option value="kilobyte">Kilobyte</option>
+                <option value="megabyte">Megabyte</option>
+                <option value="gigabyte" selected>Gigabyte</option>
+                <option value="terabyte">Terabyte</option>
+                <option value="kilobit">Kilobit</option>
+                <option value="megabit">Megabit</option>
+                <option value="gigabit">Gigabit</option>
+              </select>
 
-    <!-- Basic or common measurements. -->
-    <div class="tables-grid">
-      <figure class="table-figure" aria-label="Storage (decimal, base 10)">
-        <table>
-          <caption>Storage (Decimal, base 10)</caption>
-          <thead>
-            <tr>
-              <th>Unit</th>
-              <th>Equals</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1 KB</td>
-              <td>1,000 bytes</td>
-            </tr>
-            <tr>
-              <td>1 MB</td>
-              <td>1,000,000 bytes</td>
-            </tr>
-            <tr>
-              <td>1 GB</td>
-              <td>1,000,000,000 bytes</td>
-            </tr>
-            <tr>
-              <td>1 Byte</td>
-              <td>8 bits</td>
-            </tr>
-          </tbody>
-        </table>
-      </figure>
-
-      <figure class="table-figure" aria-label="Storage (binary, base 2)">
-        <table>
-          <caption>Storage (Binary, base 2)</caption>
-          <thead>
-            <tr>
-              <th>Unit</th>
-              <th>Equals</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1 KiB</td>
-              <td>1,024 bytes</td>
-            </tr>
-            <tr>
-              <td>1 MiB</td>
-              <td>1,048,576 bytes</td>
-            </tr>
-            <tr>
-              <td>1 GiB</td>
-              <td>1,073,741,824 bytes</td>
-            </tr>
-          </tbody>
-        </table>
-      </figure>
-
-      <figure class="table-figure" aria-label="Linux file modes (chmod)">
-        <table>
-          <caption>Linux file modes (chmod)</caption>
-          <thead>
-            <tr>
-              <th scope='col'>Mode</th>
-              <th scope='col'>Permissions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>600</td>
-              <td>rw-------</td>
-            </tr>
-            <tr>
-              <td>644</td>
-              <td>rw-r--r--</td>
-            </tr>
-            <tr>
-              <td>666</td>
-              <td>rw-rw-rw-</td>
-            </tr>
-            <tr>
-              <td>700</td>
-              <td>rwx------</td>
-            </tr>
-            <tr>
-              <td>755</td>
-              <td>rwxr-xr-x</td>
-            </tr>
-            <tr>
-              <td>775</td>
-              <td>rwxrwxr-x</td>
-            </tr>
-            <tr>
-              <td>777</td>
-              <td>rwxrwxrwx</td>
-            </tr>
-          </tbody>
-        </table>
-      </figure>
-
-      <figure class="table-figure" aria-label="Electrical">
-        <table>
-          <caption>Electrical: W = V × A</caption>
-          <thead>
-            <tr>
-              <th>From</th>
-              <th>To</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>5 V × 2 A</td>
-              <td>10 W</td>
-            </tr>
-            <tr>
-              <td>12 V × 1.5 A</td>
-              <td>18 W</td>
-            </tr>
-            <tr>
-              <td>120 V × 10 A</td>
-              <td>1200 W</td>
-            </tr>
-            <tr>
-              <td>230 V × 10 A</td>
-              <td>2300 W</td>
-            </tr>
-          </tbody>
-        </table>
-      </figure>
-
-    </div>
-
-    <!-- Custom converter section -->
-    <div id="container">
-      <div id="lowBox">
-        <h3>Custom</h3>
-        <section id="converter" aria-label="Simple converter">
-          <div class="input">
-            <label for="unitFrom">From:</label>
-            <select id="unitFrom">
-              <option value="byte">Byte</option>
-              <option value="bit">Bit</option>
-              <option value="kilobyte">Kilobyte</option>
-              <option value="megabyte" selected>Megabyte</option>
-              <option value="gigabyte">Gigabyte</option>
-              <option value="terabyte">Terabyte</option>
-              <option value="kilobit">Kilobit</option>
-              <option value="megabit">Megabit</option>
-              <option value="gigabit">Gigabit</option>
-            </select>
-
-            <input id="valueIn" type="number" step="any" placeholder="Enter Value:">
-          </div>
-          <div class="equals">=</div>
-          <div class="output">
-            <label for="unitTo">To:</label>
-            <select id="unitTo">
-              <option value="byte">Byte</option>
-              <option value="bit">Bit</option>
-              <option value="kilobyte">Kilobyte</option>
-              <option value="megabyte">Megabyte</option>
-              <option value="gigabyte" selected>Gigabyte</option>
-              <option value="terabyte">Terabyte</option>
-              <option value="kilobit">Kilobit</option>
-              <option value="megabit">Megabit</option>
-              <option value="gigabit">Gigabit</option>
-            </select>
-
-            <div id="result">Output:</div>
-          </div>
-        </section>
+              <div id="result">Output:</div>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
+    <footer aria-label="Footer">
+      <!-- My name, LinkedIn profile, and GitHub profile. -->
+      <p>&copy; 2025 by Logan Cherry</p>
+      <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
+      <a href="https://github.com/cherryjl">GitHub</a>
+    </footer>
 
-  </main>
-  <footer aria-label="Footer">
-    <!-- My name, LinkedIn profile, and GitHub profile. -->
-    <p>&copy; 2025 by Logan Cherry</p>
-    <a href="https://www.linkedin.com/in/john-cherry-b35201272/">LinkedIn</a>
-    <a href="https://github.com/cherryjl">GitHub</a>
-  </footer>
-
-  <script src="../js/appearanceToggle.js"></script>
-  <script src="../js/converterUtility.js"></script>
-  <script src="../js/tech.js"></script>
-  <script src="../js/register-SW.js"></script>
-</body>
-
+    <script src="../js/appearanceToggle.js"></script>
+    <script src="../js/converterUtility.js"></script>
+    <script src="../js/tech.js"></script>
+    <script src="../js/register-SW.js"></script>
+  </body>
 </html>

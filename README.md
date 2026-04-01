@@ -36,15 +36,19 @@ No installation required! Simply clone or download the repository and open `inde
 ## Features Details
 
 ### Dark Mode
+
 Click the sun/moon icon in the header to toggle between light and dark themes. Your preference is saved locally.
 
 ### Custom Converter
+
 Each category page features a custom converter that:
+
 - Converts any value between available units
 - Rounds results to 2 decimal places
 - Displays helpful error messages for invalid input
 
 ### Email Suggestions
+
 Found a missing conversion or have feedback? Use the suggestions form to draft an email with pre-filled content and send it through your default email client.
 
 ## Course Information

@@ -2,68 +2,68 @@
 
 /* Container div */
 #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #converter {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 5px;
-    background-color: var(--surface);
-    padding: 10px;
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+  background-color: var(--surface);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /* Input is from and output is to. */
 .input,
 .output {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
 }
 
 #lowBox {
-    margin-top: 20px;
-    width: 50vw;
-    min-width: 400px;
-    max-width: 600px;
-    padding: 10px;
-    border: 2px solid var(--tableBorder);
-    border-radius: 8px;
-    text-align: center;
-    background-color: var(--captionBG);
-    color: var(--text);
+  margin-top: 20px;
+  width: 50vw;
+  min-width: 400px;
+  max-width: 600px;
+  padding: 10px;
+  border: 2px solid var(--tableBorder);
+  border-radius: 8px;
+  text-align: center;
+  background-color: var(--captionBG);
+  color: var(--text);
 }
 
 /* Styles for the output div box. */
 #result {
-    width: 150px;
-    line-height: 20px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    font-size: 12px;
-    height: 100%;
-    border-radius: 2px;
+  width: 150px;
+  line-height: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  height: 100%;
+  border-radius: 2px;
 }
 
 /* Styles for the equals sign. */
 .equals {
-    align-self: center;
-    font-size: 24px;
-    font-weight: bold;
+  align-self: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Centers some of the form text elements */
 select,
 input,
 label {
-    width: 150px;
-    text-align: center;
+  width: 150px;
+  text-align: center;
 }

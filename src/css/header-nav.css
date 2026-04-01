@@ -68,6 +68,12 @@ nav {
   margin-left: 5px;
 }
 
+/* The sun graphic has slightly less visual fill, so give it a tiny size bump. */
+#modeIcon[src*="sun_icon"] {
+  width: 32px;
+  height: 32px;
+}
+
 /* Increases scale of dark/light mode png on hover. */
 #modeIcon:hover {
   transform: scale(1.1);
@@ -134,7 +140,6 @@ nav {
     margin-right: 0px;
     flex-shrink: 0;
     flex-basis: 1;
-
   }
 
   a.logo {
@@ -145,6 +150,4 @@ nav {
     margin: 0px;
     justify-content: space-around;
   }
-
-
 }

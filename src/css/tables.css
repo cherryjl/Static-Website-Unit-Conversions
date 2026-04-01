@@ -2,71 +2,70 @@
 
 /* Tables area. */
 .tables-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    max-width: 1500px;
-    margin: 0 auto;
-    justify-content: center;
-    white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .table-figure {
-    margin: 0px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 340px;
+  margin: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 340px;
 }
 
 .table-figure table {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* Table */
 table {
-    width: auto;
-    background: var(--surface);
-    border: 1px solid var(--tableBorder);
-    border-radius: 6px;
-    padding: 10px;
+  width: auto;
+  background: var(--surface);
+  border: 1px solid var(--tableBorder);
+  border-radius: 6px;
+  padding: 10px;
 }
 
 table th,
 table td {
-    text-align: center;
+  text-align: center;
 }
 
 #two-area {
-    width: 100%;
+  width: 100%;
 }
 
 #two-area th:nth-child(2),
 #two-area td:nth-child(2) {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 /* Styles for table caption. */
 caption {
-    padding: 8px 10px;
-    font-weight: 700;
-    text-align: center;
-    background: var(--captionBG);
+  padding: 8px 10px;
+  font-weight: 700;
+  text-align: center;
+  background: var(--captionBG);
 }
 
- /* Styles for table headers. */
+/* Styles for table headers. */
 thead th {
-    text-align: center;
-    padding: 8px 10px;
-    border-bottom: 1px solid var(--tableBorder);
+  text-align: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--tableBorder);
 }
 
 tbody td {
-    padding: 8px 10px;
-    border-bottom: 1px solid var(--tableBorder);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--tableBorder);
 }
 
- /* Styles for table body cells. */
+/* Styles for table body cells. */
 tbody tr:last-child td {
-    border-bottom: 0;
+  border-bottom: 0;
 }

@@ -1,16 +1,16 @@
 /* Links & images */
 a {
-    color: var(--brand);
-    text-decoration: none;
+  color: var(--brand);
+  text-decoration: none;
 }
 
 /* Used so the user knows that the link is interactive. */
 a:hover {
-    opacity: .75;
+  opacity: 0.75;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

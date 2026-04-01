@@ -2,18 +2,18 @@
 
 /* Styles for the cards section on the home page (index.html). */
 .cards {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .card {
-    background: var(--surface);
-    padding: 12px;
-    border-radius: var(--radius);
-    flex-grow: 1;
-    flex-shrink: 1;
+  background: var(--surface);
+  padding: 12px;
+  border-radius: var(--radius);
+  flex-grow: 1;
+  flex-shrink: 1;
 }
