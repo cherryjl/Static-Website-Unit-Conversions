@@ -1,3 +1,5 @@
+import { initConverter } from "./converterUtility.js";
+
 // Time converter - Duration conversions
 
 const timeUnits = {

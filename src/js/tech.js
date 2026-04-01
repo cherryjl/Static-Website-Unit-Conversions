@@ -1,3 +1,5 @@
+import { initConverter } from "./converterUtility.js";
+
 // Technology converter - Data storage conversions
 
 const techUnits = {

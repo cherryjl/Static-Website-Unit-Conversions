@@ -1,14 +1,12 @@
+import moonIcon from "../images/moon_icon.png";
+import sunIcon from "../images/sun_icon.png";
+
 // Selectors and variables.
 const toggleBtn = document.getElementById("modeIcon");
 const html = document.documentElement;
 const savedTheme = localStorage.getItem("theme");
-const isCategoryPage = window.location.pathname.includes("/html/");
-const sunIconPath = isCategoryPage
-  ? "../images/sun_icon.png"
-  : "images/sun_icon.png";
-const moonIconPath = isCategoryPage
-  ? "../images/moon_icon.png"
-  : "images/moon_icon.png";
+const sunIconPath = sunIcon;
+const moonIconPath = moonIcon;
 
 // Initial theme setup based on saved preference.
 if (savedTheme === "dark") {

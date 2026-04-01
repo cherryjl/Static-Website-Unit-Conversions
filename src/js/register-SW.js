@@ -1,3 +1,4 @@
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js");
+  const swPath = `${import.meta.env.BASE_URL}service-worker.js`;
+  navigator.serviceWorker.register(swPath);
 }

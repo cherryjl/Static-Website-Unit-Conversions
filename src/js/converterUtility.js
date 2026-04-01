@@ -21,7 +21,7 @@ function roundTwo(n) {
 }
 
 // Initialize converter with units and default unit
-function initConverter(units, defaultUnit) {
+export function initConverter(units, defaultUnit) {
   const unitFrom = document.getElementById("unitFrom");
   const unitTo = document.getElementById("unitTo");
   const valueInput = document.getElementById("valueIn");
