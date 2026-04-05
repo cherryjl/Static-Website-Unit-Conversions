@@ -16,17 +16,6 @@
     <link rel="stylesheet" href="../css/links-images.css" />
     <link rel="stylesheet" href="../css/tables.css" />
     <link rel="stylesheet" href="../css/custom-converter.css" />
-
-    <!-- PWA Manifest and Apple Touch Icon -->
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Unit Converter App" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="../images/myLogov2.png"
-    />
   </head>
 
   <body>
@@ -48,6 +37,7 @@
           <li><a href="tech.html">Tech & Data</a></li>
           <li><a href="travel.html">Travel & Auto</a></li>
           <li><a href="health.html">Health</a></li>
+          <li><a href="currency.html">Currency</a></li>
         </ul>
         <!-- Symbol for light and dark modes -->
         <img
@@ -75,7 +65,7 @@
         <figure class="table-figure" aria-label="Storage (decimal, base 10)">
           <table>
             <caption>
-              Storage (Decimal, base 10)
+              <h2>Storage (Decimal, base 10)</h2>
             </caption>
             <thead>
               <tr>
@@ -107,7 +97,7 @@
         <figure class="table-figure" aria-label="Storage (binary, base 2)">
           <table>
             <caption>
-              Storage (Binary, base 2)
+              <h2>Storage (Binary, base 2)</h2>
             </caption>
             <thead>
               <tr>
@@ -135,7 +125,7 @@
         <figure class="table-figure" aria-label="Linux file modes (chmod)">
           <table>
             <caption>
-              Linux file modes (chmod)
+              <h2>Linux file modes (chmod)</h2>
             </caption>
             <thead>
               <tr>
@@ -179,7 +169,7 @@
         <figure class="table-figure" aria-label="Electrical">
           <table>
             <caption>
-              Electrical: W = V × A
+              <h2>Electrical: W = V × A</h2>
             </caption>
             <thead>
               <tr>
@@ -212,7 +202,7 @@
       <!-- Custom converter section -->
       <div id="container">
         <div id="lowBox">
-          <h3>Custom</h3>
+          <h2>Custom</h2>
           <section id="converter" aria-label="Simple converter">
             <div class="input">
               <label for="unitFrom">From:</label>
@@ -233,6 +223,7 @@
                 type="number"
                 step="any"
                 placeholder="Enter Value:"
+                aria-label="Enter Value"
               />
             </div>
             <div class="equals">=</div>
@@ -266,4 +257,3 @@
     <script type="module" src="../js/entries/tech.js"></script>
   </body>
 </html>
-

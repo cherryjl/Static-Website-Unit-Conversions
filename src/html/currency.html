@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>Conversion Reference - Currency</title>
+		<meta name="author" content="Logan Cherry" />
+
+		<!-- Google Fonts and CSS Stylesheets -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;800&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/header-nav.css" />
+		<link rel="stylesheet" href="../css/links-images.css" />
+		<link rel="stylesheet" href="../css/tables.css" />
+		<link rel="stylesheet" href="../css/custom-converter.css" />
+	</head>
+
+	<body>
+		<header class="site-header">
+			<nav aria-label="Primary">
+				<div id="logoCR">
+					<!-- The site logo and abbreviation of site title -->
+					<img
+						id="convertLogo"
+						src="../images/Revolving-Arrows-x512.png"
+						alt="Two revolving arrows." />
+					<a
+						class="logo"
+						href="../index.html"
+						aria-label="Home"
+						>UC</a
+					>
+				</div>
+				<ul class="nav-links">
+					<li><a href="cooking.html">Cooking</a></li>
+					<li><a href="time.html">Time</a></li>
+					<li>
+						<a href="construction.html">Construction</a>
+					</li>
+					<li><a href="tech.html">Tech & Data</a></li>
+					<li><a href="travel.html">Travel & Auto</a></li>
+					<li><a href="health.html">Health</a></li>
+					<li><a href="currency.html">Currency</a></li>
+				</ul>
+				<!-- Symbol for light and dark modes -->
+				<img
+					id="modeIcon"
+					src="../images/sun_icon.png"
+					alt="Sun or Moon"
+					role="button" />
+			</nav>
+		</header>
+		<main id="main">
+			<section class="page-header">
+				<h1>Currency</h1>
+				<p>Common, simple currency conversions.</p>
+			</section>
+
+			<aside>
+				<p>Thanks for using my site!</p>
+			</aside>
+
+			<!-- Basic or common measurements. -->
+			<div class="tables-grid">
+				<figure class="table-figure" aria-label="Currency">
+					<table>
+						<caption>
+							<h2>USD Base Rates</h2>
+						</caption>
+						<thead>
+							<tr>
+								<th>From</th>
+								<th>To</th>
+							</tr>
+						</thead>
+						<tbody id="currencyTable">
+							<!-- JS will populate -->
+						</tbody>
+					</table>
+				</figure>
+			</div>
+
+			<!-- Custom converter section -->
+			<div id="container">
+				<!-- <div id="lowBox">
+					<h2>Custom</h2>
+					<section
+						id="converter"
+						aria-label="Simple converter">
+						<div class="input">
+							<label for="unitFrom">From:</label>
+							<select id="unitFrom">
+								<option value="inch" selected>
+									Inch
+								</option>
+								<option value="foot">
+									Foot
+								</option>
+								<option value="yard">
+									Yard
+								</option>
+								<option value="meter">
+									Meter
+								</option>
+								<option value="centimeter">
+									Centimeter
+								</option>
+								<option value="millimeter">
+									Millimeter
+								</option>
+								<option value="mile">
+									Mile
+								</option>
+								<option value="kilometer">
+									Kilometer
+								</option>
+							</select>
+
+							<input
+								id="valueIn"
+								type="number"
+								step="any"
+								placeholder="Enter Value:"
+								aria-label="Enter Value" />
+						</div>
+						<div class="equals">=</div>
+						<div class="output">
+							<label for="unitTo">To:</label>
+							<select id="unitTo">
+								<option value="inch" selected>
+									Inch
+								</option>
+								<option value="foot">
+									Foot
+								</option>
+								<option value="yard">
+									Yard
+								</option>
+								<option value="meter">
+									Meter
+								</option>
+								<option value="centimeter">
+									Centimeter
+								</option>
+								<option value="millimeter">
+									Millimeter
+								</option>
+								<option value="mile">
+									Mile
+								</option>
+								<option value="kilometer">
+									Kilometer
+								</option>
+							</select>
+
+							<div id="result">Output:</div>
+						</div>
+					</section> -->
+			</div>
+		</main>
+
+		<footer aria-label="Footer">
+			<!-- My name, LinkedIn profile, and GitHub profile. -->
+			<p>&copy; 2025 by Logan Cherry</p>
+			<a href="https://www.linkedin.com/in/john-cherry-b35201272/"
+				>LinkedIn</a
+			>
+			<a href="https://github.com/cherryjl">GitHub</a>
+		</footer>
+
+		<script type="module" src="../js/entries/currency.js"></script>
+	</body>
+</html>

@@ -1,6 +1,6 @@
 [package]
 name = "Unit-Converter"
-version = "1.1.1"
+version = "2.0.0"
 description = "A unit converter and cheat sheet app"
 authors = ["Logan Cherry"]
 edition = "2024"

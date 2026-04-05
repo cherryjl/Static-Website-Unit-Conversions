@@ -14,6 +14,7 @@ export default defineConfig({
         tech: resolve(__dirname, "src/html/tech.html"),
         travel: resolve(__dirname, "src/html/travel.html"),
         health: resolve(__dirname, "src/html/health.html"),
+        currency: resolve(__dirname, "src/html/currency.html"),
       },
     },
     outDir: "../dist",

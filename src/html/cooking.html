@@ -16,17 +16,6 @@
     <link rel="stylesheet" href="../css/links-images.css" />
     <link rel="stylesheet" href="../css/tables.css" />
     <link rel="stylesheet" href="../css/custom-converter.css" />
-
-    <!-- PWA Manifest and Apple Touch Icon -->
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Unit Converter App" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="../images/myLogov2.png"
-    />
   </head>
 
   <body>
@@ -48,6 +37,7 @@
           <li><a href="tech.html">Tech & Data</a></li>
           <li><a href="travel.html">Travel & Auto</a></li>
           <li><a href="health.html">Health</a></li>
+          <li><a href="currency.html">Currency</a></li>
         </ul>
         <!-- Symbol for light and dark modes -->
         <img
@@ -73,7 +63,7 @@
         <figure class="table-figure" aria-label="Volume">
           <table>
             <caption>
-              Volume
+              <h2>Volume</h2>
             </caption>
             <thead>
               <tr>
@@ -129,7 +119,7 @@
         <figure class="table-figure" aria-label="Mass">
           <table>
             <caption>
-              Mass
+              <h2>Mass</h2>
             </caption>
             <thead>
               <tr>
@@ -161,7 +151,7 @@
         <figure class="table-figure" aria-label="Oven temperature">
           <table>
             <caption>
-              Oven Temperature
+              <h2>Oven Temperature</h2>
             </caption>
             <thead>
               <tr>
@@ -218,7 +208,7 @@
       <!-- Custom converter section -->
       <div id="container">
         <div id="lowBox">
-          <h3>Custom</h3>
+          <h2>Custom</h2>
           <section id="converter" aria-label="Simple converter">
             <div class="input">
               <label for="unitFrom">From:</label>
@@ -242,6 +232,7 @@
                 type="number"
                 step="any"
                 placeholder="Enter Value:"
+                aria-label="Enter Value"
               />
             </div>
             <div class="equals">=</div>
@@ -277,4 +268,3 @@
     <script type="module" src="../js/entries/cooking.js"></script>
   </body>
 </html>
-

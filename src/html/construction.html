@@ -16,17 +16,6 @@
     <link rel="stylesheet" href="../css/links-images.css" />
     <link rel="stylesheet" href="../css/tables.css" />
     <link rel="stylesheet" href="../css/custom-converter.css" />
-
-    <!-- PWA Manifest and Apple Touch Icon -->
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Unit Converter App" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="../images/myLogov2.png"
-    />
   </head>
 
   <body>
@@ -73,7 +62,7 @@
         <figure class="table-figure" aria-label="Length">
           <table>
             <caption>
-              Length
+              <h2>Length</h2>
             </caption>
             <thead>
               <tr>
@@ -105,7 +94,7 @@
         <figure class="table-figure" aria-label="Other">
           <table>
             <caption>
-              Area
+              <h2>Area</h2>
             </caption>
             <thead>
               <tr>
@@ -141,7 +130,7 @@
         <figure class="table-figure" aria-label="Other">
           <table>
             <caption>
-              Other
+              <h2>Other</h2>
             </caption>
             <thead>
               <tr>
@@ -162,7 +151,7 @@
       <!-- Custom converter section -->
       <div id="container">
         <div id="lowBox">
-          <h3>Custom</h3>
+          <h2>Custom</h2>
           <section id="converter" aria-label="Simple converter">
             <div class="input">
               <label for="unitFrom">From:</label>
@@ -182,6 +171,7 @@
                 type="number"
                 step="any"
                 placeholder="Enter Value:"
+                aria-label="Enter Value"
               />
             </div>
             <div class="equals">=</div>
@@ -215,4 +205,3 @@
     <script type="module" src="../js/entries/construction.js"></script>
   </body>
 </html>
-
